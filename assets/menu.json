@@ -1,0 +1,716 @@
+{
+  "menu": [
+    {
+      "title": "Häuser",
+      "max_lvl": 4,
+      "upgrade": true,
+      "singleBuy": false,
+      "subpoints": [
+        {
+          "level": 1,
+          "cost": 100,
+          "buildtime": "1h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 2,
+          "cost": 200,
+          "buildtime": "2h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 3,
+          "cost": 300,
+          "buildtime": "3h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 4,
+          "cost": 400,
+          "buildtime": "4h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 5,
+          "cost": 500,
+          "buildtime": "5h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 6,
+          "cost": 600,
+          "buildtime": "6h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 7,
+          "cost": 700,
+          "buildtime": "7h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 8,
+          "cost": 800,
+          "buildtime": "8h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 9,
+          "cost": 900,
+          "buildtime": "9h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 10,
+          "cost": 1000,
+          "buildtime": "10h",
+          "upgradeTime": "1h",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "title": "Mauer",
+      "max_lvl": 4,
+      "upgrade": false,
+      "singleBuy": true,
+      "subpoints": [
+        {
+          "level": 1,
+          "cost": 150,
+          "buildtime": "1.5h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 2,
+          "cost": 250,
+          "buildtime": "2.5h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 3,
+          "cost": 350,
+          "buildtime": "3.5h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 4,
+          "cost": 450,
+          "buildtime": "4.5h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 5,
+          "cost": 550,
+          "buildtime": "5.5h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 6,
+          "cost": 650,
+          "buildtime": "6.5h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 7,
+          "cost": 750,
+          "buildtime": "7.5h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 8,
+          "cost": 850,
+          "buildtime": "8.5h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 9,
+          "cost": 950,
+          "buildtime": "9.5h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 10,
+          "cost": 1050,
+          "buildtime": "10.5h",
+          "upgradeTime": "1h",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "title": "Farmen",
+      "max_lvl": 7,
+      "upgrade": true,
+      "singleBuy": true,
+      "subpoints": [
+        {
+          "level": 1,
+          "cost": 120,
+          "buildtime": "1h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 2,
+          "cost": 220,
+          "buildtime": "2h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 3,
+          "cost": 320,
+          "buildtime": "3h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 4,
+          "cost": 420,
+          "buildtime": "4h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 5,
+          "cost": 520,
+          "buildtime": "5h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 6,
+          "cost": 620,
+          "buildtime": "6h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 7,
+          "cost": 720,
+          "buildtime": "7h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 8,
+          "cost": 820,
+          "buildtime": "8h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 9,
+          "cost": 920,
+          "buildtime": "9h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 10,
+          "cost": 1020,
+          "buildtime": "10h",
+          "upgradeTime": "1h",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "title": "Unterhaltung",
+      "max_lvl": 3,
+      "upgrade": true,
+      "singleBuy": true,
+      "subpoints": [
+        {
+          "level": 1,
+          "cost": 110,
+          "buildtime": "1h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 2,
+          "cost": 210,
+          "buildtime": "2h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 3,
+          "cost": 310,
+          "buildtime": "3h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 4,
+          "cost": 410,
+          "buildtime": "4h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 5,
+          "cost": 510,
+          "buildtime": "5h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 6,
+          "cost": 610,
+          "buildtime": "6h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 7,
+          "cost": 710,
+          "buildtime": "7h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 8,
+          "cost": 810,
+          "buildtime": "8h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 9,
+          "cost": 910,
+          "buildtime": "9h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 10,
+          "cost": 1010,
+          "buildtime": "10h",
+          "upgradeTime": "1h",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "title": "Schloss",
+      "max_lvl": 1,
+      "upgrade": false,
+      "singleBuy": true,
+      "subpoints": [
+        {
+          "level": 1,
+          "cost": 130,
+          "buildtime": "1h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 2,
+          "cost": 230,
+          "buildtime": "2h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 3,
+          "cost": 330,
+          "buildtime": "3h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 4,
+          "cost": 430,
+          "buildtime": "4h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 5,
+          "cost": 530,
+          "buildtime": "5h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 6,
+          "cost": 630,
+          "buildtime": "6h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 7,
+          "cost": 730,
+          "buildtime": "7h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 8,
+          "cost": 830,
+          "buildtime": "8h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 9,
+          "cost": 930,
+          "buildtime": "9h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 10,
+          "cost": 1030,
+          "buildtime": "10h",
+          "upgradeTime": "1h",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "title": "Kirche",
+      "max_lvl": 10,
+      "upgrade": false,
+      "singleBuy": true,
+      "subpoints": [
+        {
+          "level": 1,
+          "cost": 140,
+          "buildtime": "1h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 2,
+          "cost": 240,
+          "buildtime": "2h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 3,
+          "cost": 340,
+          "buildtime": "3h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 4,
+          "cost": 440,
+          "buildtime": "4h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 5,
+          "cost": 540,
+          "buildtime": "5h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 6,
+          "cost": 640,
+          "buildtime": "6h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 7,
+          "cost": 740,
+          "buildtime": "7h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 8,
+          "cost": 840,
+          "buildtime": "8h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 9,
+          "cost": 940,
+          "buildtime": "9h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 10,
+          "cost": 1040,
+          "buildtime": "10h",
+          "upgradeTime": "1h",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "title": "Straßen",
+      "max_lvl": 4,
+      "upgrade": false,
+      "singleBuy": true,
+      "subpoints": [
+        {
+          "level": 1,
+          "cost": 160,
+          "buildtime": "1.5h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 2,
+          "cost": 260,
+          "buildtime": "2.5h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 3,
+          "cost": 360,
+          "buildtime": "3.5h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 4,
+          "cost": 460,
+          "buildtime": "4.5h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 5,
+          "cost": 560,
+          "buildtime": "5.5h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 6,
+          "cost": 660,
+          "buildtime": "6.5h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 7,
+          "cost": 760,
+          "buildtime": "7.5h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 8,
+          "cost": 860,
+          "buildtime": "8.5h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 9,
+          "cost": 960,
+          "buildtime": "9.5h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 10,
+          "cost": 1060,
+          "buildtime": "10.5h",
+          "upgradeTime": "1h",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "title": "Parks",
+      "max_lvl": 6,
+      "upgrade": false,
+      "singleBuy": true,
+      "subpoints": [
+        {
+          "level": 1,
+          "cost": 170,
+          "buildtime": "1.5h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 2,
+          "cost": 270,
+          "buildtime": "2.5h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 3,
+          "cost": 370,
+          "buildtime": "3.5h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 4,
+          "cost": 470,
+          "buildtime": "4.5h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 5,
+          "cost": 570,
+          "buildtime": "5.5h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 6,
+          "cost": 670,
+          "buildtime": "6.5h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 7,
+          "cost": 770,
+          "buildtime": "7.5h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 8,
+          "cost": 870,
+          "buildtime": "8.5h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 9,
+          "cost": 970,
+          "buildtime": "9.5h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 10,
+          "cost": 1070,
+          "buildtime": "10.5h",
+          "upgradeTime": "1h",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "title": "Extra1",
+      "max_lvl": 4,
+      "upgrade": false,
+      "singleBuy": true,
+      "subpoints": [
+        {
+          "level": 1,
+          "cost": 100,
+          "buildtime": "1h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 2,
+          "cost": 200,
+          "buildtime": "2h",
+          "upgradeTime": "1h",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "title": "Extra2",
+      "max_lvl": 4,
+      "upgrade": false,
+      "singleBuy": true,
+      "subpoints": [
+        {
+          "level": 1,
+          "cost": 100,
+          "buildtime": "1h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 2,
+          "cost": 200,
+          "buildtime": "2h",
+          "upgradeTime": "1h",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "title": "Extra3",
+      "max_lvl": 4,
+      "upgrade": false,
+      "singleBuy": true,
+      "subpoints": [
+        {
+          "level": 1,
+          "cost": 100,
+          "buildtime": "1h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 2,
+          "cost": 200,
+          "buildtime": "2h",
+          "upgradeTime": "1h",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "title": "Extra4",
+      "max_lvl": 4,
+      "upgrade": false,
+      "singleBuy": true,
+      "subpoints": [
+        {
+          "level": 1,
+          "cost": 100,
+          "buildtime": "1h",
+          "upgradeTime": "1h",
+          "count": 10
+        },
+        {
+          "level": 2,
+          "cost": 200,
+          "buildtime": "2h",
+          "upgradeTime": "1h",
+          "count": 10
+        }
+      ]
+    }
+    ]
+}

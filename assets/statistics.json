@@ -1,0 +1,14 @@
+{
+  "statistics": {
+    "populationCount": 100,
+    "populationMax": 200,
+    "energyCount": 50,
+    "energyProduced": 50,
+    "energySave": 100,
+    "foodCount": 30,
+    "foodSaved": 50,
+    "foodProduced": 80,
+    "actualSteps": 500,
+    "stepsSaved": 500
+  }
+}
