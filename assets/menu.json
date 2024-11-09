@@ -2,84 +2,105 @@
   "menu": [
     {
       "title": "Häuser",
-      "max_lvl": 4,
-      "upgrade": true,
-      "singleBuy": false,
-      "subpoints": [
+      "levelCount": 10,
+      "worker": 4,
+      "houses": [
         {
-          "level": 1,
-          "cost": 100,
-          "buildtime": "1h",
-          "upgradeTime": "1h",
-          "count": 10
+          "count": 1,
+          "unlocked": true,
+          "levelUnlockCost": 150,
+          "levelBuyCost": 11,
+          "levelUpgradeCost": 12,
+          "levelBuildTime": "13h",
+          "levelUpgradeTime": "14h"
         },
         {
-          "level": 2,
-          "cost": 200,
-          "buildtime": "2h",
-          "upgradeTime": "1h",
-          "count": 10
+          "count": 2,
+          "unlocked": true,
+          "levelUnlockCost": 150,
+          "levelBuyCost": 21,
+          "levelUpgradeCost": 22,
+          "levelBuildTime": "23h",
+          "levelUpgradeTime": "24h"
         },
         {
-          "level": 3,
-          "cost": 300,
-          "buildtime": "3h",
-          "upgradeTime": "1h",
-          "count": 10
+          "count": 3,
+          "unlocked": true,
+          "levelUnlockCost": 150,
+          "levelBuyCost": 31,
+          "levelUpgradeCost": 32,
+          "levelBuildTime": "33h",
+          "levelUpgradeTime": "34h"
         },
         {
-          "level": 4,
-          "cost": 400,
-          "buildtime": "4h",
-          "upgradeTime": "1h",
-          "count": 10
+          "count": 4,
+          "unlocked": true,
+          "levelUnlockCost": 150,
+          "levelBuyCost": 11,
+          "levelUpgradeCost": 12,
+          "levelBuildTime": "13h",
+          "levelUpgradeTime": "14h"
         },
         {
-          "level": 5,
-          "cost": 500,
-          "buildtime": "5h",
-          "upgradeTime": "1h",
-          "count": 10
+          "count": 5,
+          "unlocked": true,
+          "levelUnlockCost": 150,
+          "levelBuyCost": 11,
+          "levelUpgradeCost": 12,
+          "levelBuildTime": "13h",
+          "levelUpgradeTime": "14h"
         },
         {
-          "level": 6,
-          "cost": 600,
-          "buildtime": "6h",
-          "upgradeTime": "1h",
-          "count": 10
+          "count": 6,
+          "unlocked": true,
+          "levelUnlockCost": 150,
+          "levelBuyCost": 11,
+          "levelUpgradeCost": 12,
+          "levelBuildTime": "13h",
+          "levelUpgradeTime": "14h"
         },
         {
-          "level": 7,
-          "cost": 700,
-          "buildtime": "7h",
-          "upgradeTime": "1h",
-          "count": 10
+          "count": 7,
+          "unlocked": true,
+          "levelUnlockCost": 150,
+          "levelBuyCost": 11,
+          "levelUpgradeCost": 12,
+          "levelBuildTime": "13h",
+          "levelUpgradeTime": "14h"
         },
         {
-          "level": 8,
-          "cost": 800,
-          "buildtime": "8h",
-          "upgradeTime": "1h",
-          "count": 10
+          "count": 8,
+          "unlocked": true,
+          "levelUnlockCost": 150,
+          "levelBuyCost": 11,
+          "levelUpgradeCost": 12,
+          "levelBuildTime": "13h",
+          "levelUpgradeTime": "14h"
         },
         {
-          "level": 9,
-          "cost": 900,
-          "buildtime": "9h",
-          "upgradeTime": "1h",
-          "count": 10
+          "count": 9,
+          "unlocked": true,
+          "levelUnlockCost": 150,
+          "levelBuyCost": 11,
+          "levelUpgradeCost": 12,
+          "levelBuildTime": "13h",
+          "levelUpgradeTime": "14h"
         },
         {
-          "level": 10,
-          "cost": 1000,
-          "buildtime": "10h",
-          "upgradeTime": "1h",
-          "count": 10
+          "count": 10,
+          "unlocked": true,
+          "levelUnlockCost": 150,
+          "levelBuyCost": 11,
+          "levelUpgradeCost": 12,
+          "levelBuildTime": "13h",
+          "levelUpgradeTime": "14h"
         }
       ]
     },
     {
       "title": "Mauer",
+      "levelCount": 10,
+      "worker": 4,
       "max_lvl": 4,
       "upgrade": false,
       "singleBuy": true,
@@ -87,77 +108,59 @@
         {
           "level": 1,
           "cost": 150,
-          "buildtime": "1.5h",
-          "upgradeTime": "1h",
-          "count": 10
+          "buildtime": "1.5h"
         },
         {
           "level": 2,
           "cost": 250,
-          "buildtime": "2.5h",
-          "upgradeTime": "1h",
-          "count": 10
+          "buildtime": "2.5h"
         },
         {
           "level": 3,
           "cost": 350,
-          "buildtime": "3.5h",
-          "upgradeTime": "1h",
-          "count": 10
+          "buildtime": "3.5h"
         },
         {
           "level": 4,
           "cost": 450,
-          "buildtime": "4.5h",
-          "upgradeTime": "1h",
-          "count": 10
+          "buildtime": "4.5h"
         },
         {
           "level": 5,
           "cost": 550,
-          "buildtime": "5.5h",
-          "upgradeTime": "1h",
-          "count": 10
+          "buildtime": "5.5h"
         },
         {
           "level": 6,
           "cost": 650,
-          "buildtime": "6.5h",
-          "upgradeTime": "1h",
-          "count": 10
+          "buildtime": "6.5h"
         },
         {
           "level": 7,
           "cost": 750,
-          "buildtime": "7.5h",
-          "upgradeTime": "1h",
-          "count": 10
+          "buildtime": "7.5h"
         },
         {
           "level": 8,
           "cost": 850,
-          "buildtime": "8.5h",
-          "upgradeTime": "1h",
-          "count": 10
+          "buildtime": "8.5h"
         },
         {
           "level": 9,
           "cost": 950,
-          "buildtime": "9.5h",
-          "upgradeTime": "1h",
-          "count": 10
+          "buildtime": "9.5h"
         },
         {
           "level": 10,
           "cost": 1050,
-          "buildtime": "10.5h",
-          "upgradeTime": "1h",
-          "count": 10
+          "buildtime": "10.5h"
         }
       ]
     },
     {
       "title": "Farmen",
+      "levelCount": 10,
+      "worker": 4,
       "max_lvl": 7,
       "upgrade": true,
       "singleBuy": true,
@@ -236,6 +239,8 @@
     },
     {
       "title": "Unterhaltung",
+      "levelCount": 10,
+      "worker": 4,
       "max_lvl": 3,
       "upgrade": true,
       "singleBuy": true,
@@ -314,6 +319,8 @@
     },
     {
       "title": "Schloss",
+      "levelCount": 10,
+      "worker": 4,
       "max_lvl": 1,
       "upgrade": false,
       "singleBuy": true,
@@ -392,6 +399,8 @@
     },
     {
       "title": "Kirche",
+      "levelCount": 10,
+      "worker": 4,
       "max_lvl": 10,
       "upgrade": false,
       "singleBuy": true,
@@ -470,6 +479,8 @@
     },
     {
       "title": "Straßen",
+      "levelCount": 10,
+      "worker": 4,
       "max_lvl": 4,
       "upgrade": false,
       "singleBuy": true,
@@ -548,6 +559,8 @@
     },
     {
       "title": "Parks",
+      "levelCount": 10,
+      "worker": 4,
       "max_lvl": 6,
       "upgrade": false,
       "singleBuy": true,
@@ -626,6 +639,8 @@
     },
     {
       "title": "Extra1",
+      "levelCount": 10,
+      "worker": 4,
       "max_lvl": 4,
       "upgrade": false,
       "singleBuy": true,
@@ -648,6 +663,8 @@
     },
     {
       "title": "Extra2",
+      "levelCount": 10,
+      "worker": 4,
       "max_lvl": 4,
       "upgrade": false,
       "singleBuy": true,
@@ -670,6 +687,8 @@
     },
     {
       "title": "Extra3",
+      "levelCount": 10,
+      "worker": 4,
       "max_lvl": 4,
       "upgrade": false,
       "singleBuy": true,
@@ -692,6 +711,9 @@
     },
     {
       "title": "Extra4",
+      "levelCount": 10,
+      "level": 10,
+      "worker": 4,
       "max_lvl": 4,
       "upgrade": false,
       "singleBuy": true,
@@ -712,5 +734,5 @@
         }
       ]
     }
-    ]
+  ]
 }

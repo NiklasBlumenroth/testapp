@@ -2,13 +2,12 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
-import 'package:testapp/GameEntity.dart';
 import 'SingleElem.dart';
-import 'package:testapp/balance_provider.dart';
 
 import 'StoryPage.dart';
 import 'KartePage.dart';
 import 'MaschinePage.dart';
+import 'balance_provider.dart';
 
 void main() {
   runApp(
@@ -28,8 +27,15 @@ class TestApp extends StatefulWidget {
   _TestAppState createState() => _TestAppState();
 }
 
+class Items {
+  final String title;
+  final int count;
+
+  Items(this.title, this.count);
+}
+
 class _TestAppState extends State<TestApp> {
-  late Future<List<Map<String, dynamic>>> futureProducts;
+  late Future<List<Items>> futureProducts;
   int _selectedIndex = 0; // Aktueller Index der ausgewählten Seite
 
   @override
@@ -38,22 +44,17 @@ class _TestAppState extends State<TestApp> {
     futureProducts = loadMenuData();
   }
 
-  Future<List<Map<String, dynamic>>> loadMenuData() async {
+  Future<List<Items>> loadMenuData() async {
     final String response = await rootBundle.loadString('assets/menu.json');
     final data = json.decode(response);
 
-    List<Map<String, dynamic>> menuItems = [];
+    List<Items> menuItems = [];
 
     for (var item in data['menu']) {
-      menuItems.add({
-        "upgrade": item['upgrade'],
-        "singleBuy": item['singleBuy'],
-        "title": item['title'],
-        "max_lvl": item['max_lvl'],
-        "subpoints": (item['subpoints'] as List)
-            .map((subItem) => Map<String, dynamic>.from(subItem))
-            .toList(),
-      });
+      String title = item['title'];
+      int count = item['levelCount'];
+      Items items = Items(title, count);
+      menuItems.add(items);
     }
 
     return menuItems;
@@ -68,7 +69,7 @@ class _TestAppState extends State<TestApp> {
   Widget _getPage(int index) {
     switch (index) {
       case 0:
-        return FutureBuilder<List<Map<String, dynamic>>>( // Hauptseite
+        return FutureBuilder<List<Items>>( // Hauptseite
           future: futureProducts,
           builder: (context, snapshot) {
             if (snapshot.connectionState == ConnectionState.waiting) {
@@ -80,7 +81,9 @@ class _TestAppState extends State<TestApp> {
               return ListView.builder(
                 itemCount: products.length,
                 itemBuilder: (context, i) {
-                  return SingleElem(products[i],);
+                  String titel = products[i].title;
+                  int count = products[i].count;
+                  return SingleElem(titel, count);
                 },
               );
             }

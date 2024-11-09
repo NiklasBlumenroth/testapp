@@ -1,12 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:testapp/GameEntity.dart';
-import 'package:testapp/SecondPage.dart';
+import 'house_page.dart';
 
 class SingleElem extends StatelessWidget {
-  final GameEntity itemData; // Ändere den Datentyp zu GameEntity
-
-  const SingleElem(this.itemData); // Übergebe ein GameEntity-Objekt
+  final String title; // Ändere den Datentyp zu GameEntity
+  final int levelCount;
+  const SingleElem(this.title, this.levelCount); // Übergebe ein GameEntity-Objekt
 
   @override
   Widget build(BuildContext context) {
@@ -24,18 +23,19 @@ class SingleElem extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => SecondPage(
-                  title: itemData.title, // Zugriff auf den Titel über GameEntity
-                  data: [itemData], // Übergabe des GameEntity-Objekts als Liste
-                  maxLevel: itemData.max_level, // Zugriff auf maxLevel
-                  singleBuy: itemData.singleBuy,
-                  upgradable: itemData.upgradable,
-                ),
+                builder: (context) {
+                  switch (this.title) {
+                    case "Häuser": return HousePage(title: this.title, levelCount: this.levelCount);
+                    default:
+                      return HousePage(title: this.title, levelCount: this.levelCount,); // Fallback-Seite, falls keine Übereinstimmung
+                  }
+                },
               ),
             );
+
           },
           child: Text(
-            itemData.title, // Zugriff auf den Titel über GameEntity
+            this.title,
             style: TextStyle(
               fontSize: 18.0,
               fontWeight: FontWeight.w600,

@@ -4,41 +4,40 @@ import 'package:testapp/upgradeMenu/FlexibleButton.dart';
 import 'package:testapp/upgradeMenu/UpgradeTimeRow.dart';
 
 class HouseCard extends StatelessWidget {
+
   final int level;
-  final int cost;
-  final String buildTime;
-  final String upgradeTime;
   final int count;
-  final int maxLevel;
-  final String? unlockCondition; // optional unlock condition
-  final bool singleBuy; // Neues Feld
-  final bool upgrade; // Neues Feld
-  final Function(int) onUpgrade;
-  final Function(int) onBuy;
-  final Function() onUpgradeAll; // Callback für alle upgraden
+  final bool unlocked;
+  final int levelUnlockCost;
+  final int levelBuyCost;
+  final int levelUpgradeCost;
+  final String levelBuildTime;
+  final String levelUpgradeTime;
+  // final Function(int) onUpgrade;
+  // final Function(int) onBuy;
+  // final Function() onUpgradeAll; // Callback für alle upgraden
+  final bool upgrade = true;
+  final bool singleBuy = false;
 
   const HouseCard({
     Key? key,
     required this.level,
-    required this.cost,
-    required this.buildTime,
-    required this.upgradeTime,
     required this.count,
-    required this.maxLevel,
-    this.unlockCondition, // optional
-    required this.onUpgrade,
-    required this.onBuy,
-    required this.onUpgradeAll,
-    required bool singleBuy, // Hier den booleschen Typ erhalten
-    required bool upgrade, // Hier den booleschen Typ erhalten
-  })  : singleBuy = singleBuy ?? true, // Standardwert auf false setzen
-        upgrade = upgrade ?? false, // Standardwert auf false setzen
-        super(key: key);
+    required this.unlocked,
+    required this.levelUnlockCost,
+    required this.levelBuyCost,
+    required this.levelUpgradeCost,
+    required this.levelBuildTime,
+    required this.levelUpgradeTime,
+    // required this.onUpgrade,
+    // required this.onBuy,
+    // required this.onUpgradeAll
+  })  : super(key: key);
 
 
   @override
   Widget build(BuildContext context) {
-    final isLocked = level > maxLevel;
+    final isLocked = !unlocked;
 
     return Card(
       elevation: isLocked ? 2 : 4,
@@ -63,7 +62,7 @@ class HouseCard extends StatelessWidget {
               style: TextStyle(color: isLocked ? Colors.grey : Colors.black),
             ),
             Text(
-              'Baukosten: $cost',
+              'Baukosten: $levelBuildTime',
               style: TextStyle(color: isLocked ? Colors.grey : Colors.black),
             ),
             if (isLocked)
@@ -76,14 +75,14 @@ class HouseCard extends StatelessWidget {
               ),
             if (!isLocked) ...[
               SizedBox(height: 8),
-              BuildTimeRow(buildTime: buildTime),
-              UpgradeTimeRow(upgradeTime: upgradeTime),
+              BuildTimeRow(buildTime: levelBuildTime),
+              UpgradeTimeRow(upgradeTime: levelUpgradeTime),
               SizedBox(height: 8),
               Wrap(
                 spacing: 8.0,
                 runSpacing: 8.0,
                 children: [
-                  // Upgrade Buttons nur anzeigen, wenn upgrades verfügbar sind
+                 /* // Upgrade Buttons nur anzeigen, wenn upgrades verfügbar sind
                   if (upgrade) ...[
                     FlexibleButton(
                       onPressed: count >= 1 ? () => onUpgrade(1) : null,
@@ -117,24 +116,26 @@ class HouseCard extends StatelessWidget {
                       color: Colors.greenAccent,
                     ),
                   ],
+
+                  */
                 ],
               ),
-              SizedBox(height: 8),
-              if (upgrade) // Nur anzeigen, wenn Upgrades verfügbar sind
-                Container(
-                  width: double.infinity, // Button auf volle Breite der Card
-                  child: ElevatedButton(
-                    onPressed: onUpgradeAll, // Callback für alle upgraden
-                    child: Text("Alle auf nächstes Level upgraden"),
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blueGrey,
-                      padding: EdgeInsets.symmetric(vertical: 12),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.zero, // Eckiges Design
-                      ),
-                    ),
-                  ),
-                ),
+              // SizedBox(height: 8),
+              // if (upgrade) // Nur anzeigen, wenn Upgrades verfügbar sind
+              //   Container(
+              //     width: double.infinity, // Button auf volle Breite der Card
+              //     child: ElevatedButton(
+              //       onPressed: onUpgradeAll, // Callback für alle upgraden
+              //       child: Text("Alle auf nächstes Level upgraden"),
+              //       style: ElevatedButton.styleFrom(
+              //         backgroundColor: Colors.blueGrey,
+              //         padding: EdgeInsets.symmetric(vertical: 12),
+              //         shape: RoundedRectangleBorder(
+              //           borderRadius: BorderRadius.zero, // Eckiges Design
+              //         ),
+              //       ),
+              //     ),
+              //   ),
             ]
           ],
         ),
